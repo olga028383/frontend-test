@@ -1,0 +1,17 @@
+.language{
+  padding: 0;
+  margin: 0;
+}
+.language__item{
+  display: inline-block;
+  vertical-align: top;
+}
+.language__link{
+  font-size: 11px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 15px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}

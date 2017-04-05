@@ -1,0 +1,22 @@
+.user-menu{
+  padding: 11px 22px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  margin: 0;
+  margin-right: -24px;
+}
+.user-menu__item{
+  display: inline-block;
+  vertical-align: middle;
+
+  &:first-child .user-menu__link{
+    padding-right: 32px
+  }
+}
+.user-menu__link{
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}

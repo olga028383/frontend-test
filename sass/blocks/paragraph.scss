@@ -1,0 +1,14 @@
+.paragraph{
+  font-family: $font-light;
+  font-size: 16px;
+  line-height: 1.4;
+  color: $color-black;
+}
+.form__paragraph{
+  margin: -30px auto 38px;
+}
+@include adaptive(tablet){
+  .form__paragraph{
+    width: 490px;
+  }
+}

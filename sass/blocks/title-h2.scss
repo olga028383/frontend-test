@@ -1,0 +1,34 @@
+.title-h2{
+  font-family: $font-light;
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0 0 42px 0;
+  font-weight: 100;
+
+  &::before{
+    content: "";
+    display: block;
+    margin: 0 auto 18px;
+    width: 49px;
+    height: 49px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  &--icon1::before{
+    background-image: url(../../img/icon3.png);
+  }
+
+  &--icon2::before{
+    background-image: url(../../img/icon4.png);
+  }
+
+  &--icon3::before{
+    background-image: url(../../img/icon2.png);
+  }
+
+  &--icon4::before{
+    background-image: url(../../img/icon1.png);
+  }
+}

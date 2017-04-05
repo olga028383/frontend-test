@@ -1,0 +1,18 @@
+.btn{
+  @include btn_link(16px, $font-light, 50px,$color-blue, #ffffff);
+  transition: all 0.2s linear;
+  border-radius: 5px;
+  width: 112px;
+  margin: 70px auto 136px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-transform: none;
+
+  &:hover{
+    opacity: 0.7;
+  }
+  &:active{
+    opacity: 0.3;
+  }
+}

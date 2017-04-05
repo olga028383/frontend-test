@@ -1,0 +1,93 @@
+.field{
+  margin-bottom: 24px;
+
+  &--checkbox{
+    text-align: left;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  &--mail{
+    margin-bottom: 75px;
+  }
+
+}
+.field__text{
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+  font-family: $font-regular;
+  color: $color-black;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  outline: none;
+
+}
+.field__textarea{
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  width: 100%;
+  font-family: $font-regular;
+  color: $color-black;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 16px 22px;
+  box-sizing: border-box;
+  height: 180px;
+  outline: none;
+}
+.field__checkbox{
+  display: none;
+
+}
+.field__checkbox:checked + .field__name::after{
+  content: '\2713';
+  position: absolute;
+  top: 0;
+  left: 4px;
+  color: $color-black;
+  z-index: 2;
+}
+.field__name{
+  font-family: $font-light;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 19px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid $color-blue;
+    border-radius: 3px;
+    margin-right: 13px;
+  }
+
+}
+@include adaptive(tablet){
+  .field{
+    max-width: 521px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+
+    &--checkbox{
+      text-align: left;
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    &--mail{
+      margin-bottom: 75px;
+    }
+  }
+}

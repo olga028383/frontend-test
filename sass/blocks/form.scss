@@ -1,0 +1,28 @@
+.form{
+  font-size: 0;
+  fieldset{
+    border: none;
+    padding: 0;
+  }
+}
+.form__group-checkbox-wrap{
+  text-align: left;
+  padding-top: 2px;
+  margin-bottom: 117px;
+}
+@include adaptive(tablet){
+  .form__group-checkbox{
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%; 
+    box-sizing: border-box;
+
+    &--wide{
+      width: 39.3%;
+      padding-left: 22px;
+    }
+    &--narrow{
+      width: 20%
+    }
+  }
+}

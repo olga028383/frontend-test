@@ -1,0 +1,43 @@
+.menu{
+  @include container();
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+}
+
+.menu__item{
+  display: block;
+  height: 80px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 30px;
+}
+.menu__link{
+  display: block;
+  font-family: $font-regular;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #435993;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  padding: 0 34px;
+
+  &:hover{
+    color: $color-black;
+  }
+
+  &--active{
+    color: $color-black;
+  }
+
+}
+@include adaptive(tablet){
+  .menu__item{
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    height: auto;
+    padding-top: 0;
+  }
+}
